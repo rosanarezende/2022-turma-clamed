@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="index.js" defer></script>
-  <title>Aula 02</title>
-</head>
-<body>
-    <h1>Aula 02</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Aula 02</title>
+  </head>
+  <body>
+    <h1>Aula 02 - DOM</h1>
+
+    <div id="conteudo-principal">
+      <h2 class="subtitulo">Porque aprender?</h2>
+      <p>
+        Podemos utilizar o JavaScript (e suas funções) para manipular o HTML
+      </p>
+
+      <button id="btn-1" onclick="insereParagrafo()" onmouseout="removerDiv()" onmouseover="voltaDiv()">
+        Clique aqui para criar
+      </button>
+      <button onclick="removeParagrafo()"> Clique aqui para remover</button>
+      <div id="resposta-clique-aqui"></div>
+      <br/>
+      <div id="div-pai">
+        <div id="resposta-botao-remover-voltar">Sou uma div que tem que aparecer e sumir</div>
+      </div>
+
+
+      <br/><br/>
+      <input type="text" id="meu-input">
+        <button onclick="imprimeInput()">
+          Preencha o input e clique aqui
+        </button>
+
+        <br/><br/><br/><br/>
+
+        <!-- addEventListener -->
+        <button id="terceiro-botao">
+          Terceiro botão
+        </button>
+        <div id="conteudo"></div>
+
+      <br/><br/>
+      <h2 class="subtitulo">Funcionamento</h2>
+      <p class="paragrafo-2">
+        O navegador lê e renderiza o HTML e, em seguida, cria um conjunto de
+        comandos.
+      </p>
+      <p>Para cada comando, o navegador executa a função correspondente:</p>
+      <ul>
+        <li>Acessar elementos</li>
+        <li>Alterar elementos</li>
+        <li>Adicionar elementos</li>
+      </ul>
+
+      <br/>
+      <h2>Filhos e Descendentes</h2>
+
+
+      <div>
+        <p>
+          Parágrafo Filho 1
+        </p>
+
+        <a>
+          <p>Parágrafo Neto 1</p>
+        </a>
+
+        <p>
+          Parágrafo Filho 2
+        </p>
+
+        <a>
+          <p>Parágrafo Neto 2</p>
+        </a>
+      </div>
+
+
+    </div>
+  </body>
+
+  <!-- segunda opção de script -->
+  <!-- <script src="index.js"></script> -->
 </html>
+
+<elemento evento="nomeDaFuncao()" >
+

@@ -1,0 +1,30 @@
+/* * {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* h1 {
+  color: blue;
+} */
+
+/* body{
+  padding: 20px;
+} */
+
+/* #btn-1 {
+  background-color: red;
+} */
+
+/* .subtitulo {
+  font-size: 10px;
+} */
+
+
+/* Filhos diretos */
+/* div > p {
+  color: blue;
+} */
+
+/* Descendentes - todos */
+/* div p {
+  color: blue;
+} */
