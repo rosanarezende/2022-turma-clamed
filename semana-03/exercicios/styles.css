@@ -1,0 +1,15 @@
+span {
+  color: blue;
+
+  /* extras - para ficar mais legível */
+  background-color: rgb(238, 232, 181);
+  margin: 10px;
+}
+
+#aparece-mensagem{
+  margin: 20px;
+  width: 350px;
+  text-align: center;
+  font-weight: bold;
+  font-size:20px;
+}
