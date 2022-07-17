@@ -71,6 +71,36 @@ function meuProgramaSobreListas(lista = []){
 meuProgramaSobreListas(["oi", "turu", "bom"])
 
 
+
+///////////////////////////////////////////////////////////
+// EXTRA - Explicando retorno de Função
+///////////////////////////////////////////////////////////
+
+// se for sem retorno (console.log) não é possível atribuir o valor a uma variável pois o o resultado será undefined
+// como há retorno, podemos reaproveitar o resultado da função informarParOuImparNumaFrase
+function informarParOuImpar(num1){
+  // converter uma string para um número
+  var numeroProtegido = Number(num1)
+  if(numeroProtegido % 2 == 0){
+      return'Par'
+  } else if(numeroProtegido %2 != 0){
+    return'Ímpar'
+  } else{ 
+    return "inválido"
+  }
+}
+
+const resultado = informarParOuImpar(1)
+
+function informarParOuImparNumaFrase(num) {
+  // return "O número ", num, " é ", resultado
+  
+  // ou usar template string 
+  retun `O número ${num} é ${resultado}`
+}
+console.log(informarParOuImparNumaFrase(2))
+
+
 ///////////////////////////////////////////////////////////
 // EXTRA - Função com mais de um retorno
 ///////////////////////////////////////////////////////////
